@@ -3,6 +3,7 @@
 *.suo
 bin/
 bin64/
+vs.proj/.vs
 vs.proj/Debug
 vs.proj/Release
 vs.proj/x64
