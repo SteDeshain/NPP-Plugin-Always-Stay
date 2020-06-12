@@ -69,7 +69,6 @@ void commandMenuInit()
 void commandMenuCleanUp()
 {
 	// Don't forget to deallocate your shortcut here
-	fs.close();
 }
 
 
@@ -127,6 +126,7 @@ void afterNPPLaunched()
 			continue;
 		::SendMessage(nppData._nppHandle, NPPM_DOOPEN, 0, (LPARAM)buffer);
 	}
+	fs.close();
 	
 	// Switch to the last-opened file
 	//::SendMessage(nppData._nppHandle, NPPM_DOOPEN, 0, (LPARAM)currentPath);
